@@ -13,27 +13,32 @@
 
 Για τις _dcache, icache, l2cache_ παρατίθεται ο παρακάτω πίνακας.
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/1o%20er.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/1o%20er.png)
 
 
 ### Ερώτημα 2ο:
 
 Για να αντλήσουμε τις πληροφιρίες που ζητούνται στο ερώτημα 2, θα ανατρέξουμε στα αρχεία _stats.txt_ των benchmarks. Ο παρακάτω πίνακας παρουσιάζει συνολικά τα _**miss rates**_ των caches, τα _**CPI**_ καθώς και τους χρόνους εκτέλεσης του κάθε benchmark:
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/2o%20erwt.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/2o%20erwt.png)
 
 Στη συνέχεια παραθέτονται ορισμένα διαγράμματα σχετικά με τα στατιστικά αυτά, για το σύνολο των benchmarks.
 
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/L1D.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/L1D.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/L1I.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/L2.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/L1I.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/CPI.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/SIM%20TIME.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/L2.png)
+
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/CPI.png)
+
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/SIM%20TIME.png)
+
 
 #### Συμπεράσματα:
 Από τα διαγράμματα που παρουσιάστηκαν παραπάνω, μπορούμε να αντλήσουμε ορισμένα χρήσιμα συμπεράσματα.
@@ -53,9 +58,9 @@
 
 Συνεπώς μπορούμε να αντιληφθούμε πως ο υποδιπλασιασμός της συχνότητας του επεξεργαστεί μπορεί να αποφέρει διπλασιασμό του χρόνου εκτέλεσης του benchmark, ωστόσο αυτό δεν είναι απαραίτητο καθώς η καθυστέρηση μπορεί να μην έγκειται μόνο στη συχνότητα που εκτελεί ο επεξεργαστής της διεργασίες του, αλλά και στην επικοινωνία που έχει με τα υπόλοιπα υποσυστήματα. Παρακάτω παρουσιάζονται τα αποτελέσματα που προέκυψαν από τα 3 διαφορετικά benchmarks που τρέξαμε στο 1GHz, σε σχέση με αυτά των 2GHz:
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/3o.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/3o.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/1ghz.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/1ghz.png)
 
 Στα benchmarks specbzip και specmcf υπάρχει σχεδόν τέλειο scaling με το χρόνο εκτέλεσης να διπλασιάζεται για υποδιπλασιασμό της συχνότητας του επεξεργαστή, πράγμα που δε συμβαίνει και στο specsjeng, για το λόγο που αναφέραμε παραπάνω.
 
@@ -68,25 +73,25 @@
 
 **Specsjeng**: Πρόκειται για το πιο χρονοβόρο benchmark της εργασίας, με τη τιμή του CPI να είναι μεγαλύτερη από 10, και το χρόνο εκτέλεσης κοντά στα 0.5 δευτερόλεπτα. Παρακάτω παρουσιάζονται τα στοιχεία και το αντίστοιχο γράφημα:
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/specsjeng1.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/specsjeng1.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/specsjeng%20plot.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/specsjeng%20plot.png)
 
 Παρατηρήσεις: Αλλάζοντας μεγέθη και συσχετίσεις των διαφορετικών caches, μπορούμε να παρατηρήσουμε πως τόσο για την dcache, όσο και για την l2cache η αύξηση του μεγέθους της μνήμης τους και του associativity τους οδηγεί σε μείωση του CPI και συνεπώς του χρόνου εκτέλεσης. Παρόλα αυτά η διαφορά αυτή είναι αρκετά μικρή και πιθανώς μη υπολογίσιμη αφού και τα miss rates δεν εμφανίζουν κάποια διαφορά. Αλλάζοντας ωστόσο το μέγεθος του cacheline, παρατηρούμε μια μείωση της τάξης του 35% τόσο στο CPI όσο και στο χρόνο εκτέλεσης. Όπως παρατηρήθηκε και στο 1ο βήμα, η διαφορές αυτές ωφείλονται στη μεγάλη πτώση του miss rate της dcache. (_**φυσικά η τιμή έχει 128 για το cacheline size και 512 για associativity, καθώς και όλες οι υπόλοιπες τιμές, επιλέχθηκαν με βάση πραγματικ΄α΄ στοιχεία και με τους περιορισμούς που τέθηκαν από την εργασία).
 
 **Speclibm**: Αποτελεί το δεύτερο πιο χρονοβόρο benchmark, με τιμή CPI περίπου 3.5 και χρόνο εκτέλεσης στα 0.17 δευτερόλεπτα. Παρακάτω παρουσιάζονται τα στοιχεία και το αντίστοιχο γράφημα:
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/speclibm.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/speclibm.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/speclibm%20plot.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/speclibm%20plot.png)
 
 Παρατηρήσεις: Ακολουθήσαμε την ίδια τακτική με το προηγούμενο benchmark, αυξάνοντας μεγέθη και συσχετίσεις στην dcache & l2cache. Σε αυτή τη περίπτωση ωστόσο μπορούμε να παρατηρήσουμε πως η αύξηση/μείωση μεγέθους και associativity στην dcache δεν επιφέρει καμία αλλαγή στη ταχύτητα του συστήματος. Αντίθετα η αύξηση/μείωση μεγέθους και associativity στην l2cache επιφέρει αντίστοιχα μείωση/αύξηση στο χρόνο εκτέλεσης, ωστόσο όπως και στο προηγούμενο benchmark η διαφορά είναι αρκετά μικρή. Τέλος, η αύξηση του cacheline size σε 128, είναι αυτή που επιφέρει ξανά τη μεγαλύτερη μείωση στο CPI του συστήματος, η οποία ανέρχεται στο 30%.
 
 **Specbzip**: 
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/specbzip.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/specbzip.png)
 
-![](https://github.com/adelizon/8479-8256-LAB2/blob/master/specbzip%20plot.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab2/Graphs/specbzip%20plot.png)
 
 Παρατηρήσεις: Στη περίπτωση αυτή παρατηρούμε πως η μεγαλύτερη διαφορά ωφείλεται στην αύξηση του associativity της dcache καθώς μειώνει περίπου κατα 30% το miss rate της dcache. Αντίστοιχα για μείωση του associativity της dcache έχουμε σχεδόν διπλασιασμό του miss rate και φυσικά αύξηση των CPI. Αυξάνοντας μέγεθος και συσχέτιση στην l2, καθώς και cacheline size, πετυχγαίνουμε ακόμα μεγαλύτερη βελτίωση η οποία ωστόσο θα μπορούσε να θεωρηθεί αμελητέα.
 
