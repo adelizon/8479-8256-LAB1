@@ -133,3 +133,6 @@ Oρίζοντας τώρα το μέγεθος των μνημών ως L1,L2, �
 
 Στο δεύτερο διάγραμμα βλέπουμε τα CPI συναρτήσει του κόστους.
  
+
+## Πηγές
+ [Cache Memory](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive)
