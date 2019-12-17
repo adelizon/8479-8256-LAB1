@@ -136,3 +136,7 @@ Oρίζοντας τώρα το μέγεθος των μνημών ως L1,L2, �
 
 ## Πηγές
  [Cache Memory](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive)
+ 
+ [dCahce & iCache](http://www.cim.mcgill.ca/~langer/273/18-notes.pdf)
+ 
+ [l1Cache miss cost](https://stackoverflow.com/questions/1126529/what-is-the-cost-of-an-l1-cache-miss)
