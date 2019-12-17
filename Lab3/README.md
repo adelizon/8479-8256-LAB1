@@ -61,6 +61,10 @@ Aντίστοιχα για τον ARM A9, η δυναμική κατανάλωσ
 
 ### Ερώτημα 1
 
+Στο δεύτερο μέρος της εργαστηριακής άσκησης, θα χρησιμοποιήσουμε τα [αποτελέσματα](https://github.com/adelizon/8479-8256-LAB1/tree/master/Lab2/results2ndpart_sjeng) που πήραμε για τις προσομοιώσεις του specsjeng για διάφορες dCache  και l2Cache στη δεύτερη εργασία.
+
+Για το Energy - Delay - Area product, θα χρησιμοποιήσουμε το area από τα αποτελέσματα που μας δίνει ο McPAT. Για το delay, θα αντλήσουμε τις πληροφορίες από το simulation time των benchmarks, ενώ για τον υπολογισμό της ενέργειας όπως αναφέρθηκε παραπάνω, θα χρησιμοποιήσουμε τη σχέση **E = Pt**, για το runtime dynamic των core και l2cache αθροιστικά.
+
 
 
 
@@ -78,4 +82,6 @@ Aντίστοιχα για τον ARM A9, η δυναμική κατανάλωσ
 
 [Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling)
 
-(https://www.sciencedirect.com/topics/computer-science/dynamic-power-consumption)
+[Dynamic Power](https://www.sciencedirect.com/topics/computer-science/dynamic-power-consumption)
+
+![Energy - Delay product](http://www.eecs.harvard.edu/~dbrooks/cs246/cs246-lecture2.pdf)
