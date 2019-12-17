@@ -65,7 +65,23 @@ Aντίστοιχα για τον ARM A9, η δυναμική κατανάλωσ
 
 Για το Energy - Delay - Area product, θα χρησιμοποιήσουμε το area από τα αποτελέσματα που μας δίνει ο McPAT. Για το delay, θα αντλήσουμε τις πληροφορίες από το simulation time των benchmarks, ενώ για τον υπολογισμό της ενέργειας όπως αναφέρθηκε παραπάνω, θα χρησιμοποιήσουμε τη σχέση **E = Pt**, για το runtime dynamic των core και l2cache αθροιστικά.
 
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/MCPAT%201.png)
 
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20area.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20dynamic.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20gate.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20sub.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20area.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20runtime.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20sub.png)
+
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20gate.png)
 
 
 ## Πηγές
