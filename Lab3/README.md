@@ -1,6 +1,7 @@
 # 3η Εργαστηριακή Άσκηση 
 
 ΔΕΛΗΖΩΝΑΣ ΑΠΟΣΤΟΛΟΣ ΑΕΜ: 8479
+
 ΤΣΙΑΝΤΟΣ ΑΠΟΣΤΟΛΟΣ ΑΕΜ: 8256
 
 ## Μέρος 1ο
@@ -66,23 +67,23 @@ Aντίστοιχα για τον ARM A9, η δυναμική κατανάλωσ
 
 Παρακάτω παρουσιάζονται σχετικά γραφήματα που αναδεικνύουν την επιρροή της αλλαγής των χαρακτηριστικών της dcache και l2cache στο effective area καθώς και την κατανάλωση των επεξεργαστών.
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/MCPAT%201.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/MCPAT%201.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20area.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/core%20area.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20dynamic.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/core%20dynamic.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20gate.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/core%20gate.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/core%20sub.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/core%20sub.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20area.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/l2%20area.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20runtime.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/l2%20runtime.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20sub.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/l2%20sub.png)
 
-![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/l2%20gate.png)
+![](https://github.com/adelizon/8479-8256-LAB1/blob/master/Lab3/Graphs/l2%20gate.png)
 
 
 Παρατηρούμε απο την παραπάνω ανάλυση στον mcPat οτι ο δείκτης EDA ελαχιστοποιείται για υλοποιήσεις με σχετικά μικρό L2 Area  καθώς μειώνεται σημαντικά η κατανάλωση λόγω ρευμάτων διαρροής (Subthreshold - Gate leakage). Η μείωση ωστόσο του μεγέθους της L2 cache, φαίνεται να επηρεάζει σε μεγάλο βαθμό και τον δείκτη IND που χρησιμοποιήθηκε για την ανάλυση κόστους στην προηγούμενη άσκηση. Πράγματι, τα οι δύο βελτιστες υλοποιήσεις από άποψη κόστους είναι και οι βέλτιστες από άποψη ενεργειακής κατανάλωσης. Μπορούμε λοιπόν πλεον να πούμε πως έχοντας κάνει την μια εκ των δύο αναλύσεων κάποιος θα μπορούσε να κάνει μια αρκετά καλή προσέγγιση και της άλλης. Αυτο σε καμία περίπτωση δεν καθιστά κάποια ανάλυση περιττή, καθώς η επιλογή των χαρακτηριστικών της τελικής υλοποίησης εξαρτάται από τις απαιτήσεις του συστήματος και ειναι εως ένα βαθμό υποκειμενική.
